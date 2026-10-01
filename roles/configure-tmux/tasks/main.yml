@@ -10,4 +10,9 @@
     src: "{{ role_path }}/files/.tmux.conf"
     dest: "{{ ansible_env.HOME }}"
 
+- name: "Copying Vim Config"
+  copy:
+    src: "{{ role_path }}/files/.vimrc"
+    dest: "{{ ansible_env.HOME }}/.vimrc"
+
 
